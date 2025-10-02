@@ -1,0 +1,28 @@
+.banner-slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 152, 0, 0.6);
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(0); }
+  40%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-100%); }
+  73%  { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
+}
